@@ -24,6 +24,10 @@ a {
     color: #ebf4f5;
 }
 
+.visually-hidden {
+    display: none;
+}
+
 .main-container {
     background-color: #423f42;
     width: 80%;
