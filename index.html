@@ -18,29 +18,88 @@
         <header>
             <nav>
                 <div class="nav-container">
-                    <a href="index.html">
-                        <img src="images/Icon/logo.jpg" alt="reanime icon">
-                    </a>
-                    <form action="/search-results.html" method="GET" class="search-anime" id="nav-search-anime">
-                        <label for="search_anime" class="visually-hidden">Search Anime</label>
-                        <input type="search"  class="search-box" name="search_anime" id="search_anime" placeholder="Enter anime name">
-                        <button type="submit"  class="search-button">Search</button>
-                    </form>
+                    <div class="burger-wrapper">
+                        <div class="burger-menu" id="burger-menu">
+                            <i class="fa-solid fa-bars burger-icon" style="color: #ffffff;"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="logo-wrapper stay-right">
+                        <a href="index.html">
+                            <img src="images/Icon/logo.jpg" alt="reanime icon"> 
+                        </a>
+                        <a href="index.html"><i>Reanime</i></a>
+                    </div> 
+
+                    <div class="search-results">
+                        <form action="/search-results.html" method="GET" class="search-anime" id="nav-search-anime">
+                            <label for="search_anime" class="visually-hidden">Search Anime</label>
+                             <div class="search-display" id="search-display">
+                                <i class="fas fa-search" style="color: #948f8f;"></i>
+                             </div>
+                            <i class="fa-solid fa-circle-user" style="color: #f7f7f7;"></i>
+                            <input type="search"  class="search-box visually-hidden" name="search_anime" id="search_anime" placeholder="Enter anime name">
+                            <button type="submit"  class="search-button visually-hidden">Search</button>
+                        </form>
+                    </div>
                 </div>
+                    <div class="link-wrapper">
+                        <div class="nav-link" id="nav-link">
+                            <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="anime.html">ANIME LIST</a></li>
+                                <li><a href="popular.html">POPULAR</a></li>
+                                <li><a href="newSeason.html">NEW SEASON</a></li>
+                                <li><a href="movies.html">MOVIES</a></li>
+                            </ul>
+                        </div>
+                        <div class="search-results-mobile">
+                            <div class="search-wrapper" id="search-wrapper">
+                                <form action="/search-results.html" method="GET" class="search-anime" id="nav-search-anime search-show">
+                                    <label for="search_anime" class="visually-hidden">Search Anime</label>
+                                    <input type="search" class="search-box" name="search_anime" id="search_anime" placeholder="Enter anime name">
+                                    <button type="submit" class="search-button">
+                                        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> <!--For accesibility-->
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </nav>
         </header>
         
 
         <main>
             <div class="carousel">
+                <nav>
+                    <div class="nav11-container">
+                        <div class="burger-menua" id="burger-menau">
+                            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                        </div>
+    
+                        <div class="nav-linka" id="nav-linka">
+                            <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="anime.html">ANIME LIST</a></li>
+                                <li><a href="popular.html">POPULAR</a></li>
+                                <li><a href="newSeason.html">NEW SEASON</a></li>
+                                <li><a href="movies.html">MOVIES</a></li>
+                            </ul>
+                        </div>
+    
 
+                    </div>
+                </nav>
             </div>
 
         </main>
 
         <footer>
-
+            
         </footer>
     </div>    
+    <script src="script.js"></script>
 </body>
 </html>
