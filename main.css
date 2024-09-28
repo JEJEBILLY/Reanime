@@ -6,6 +6,17 @@
 
 :root {
     --main-color: #ffc119;
+<<<<<<< Updated upstream
+=======
+    --main-color2: #d39f12;
+    --background-color: #000;
+    --text-color: #d9dddd;
+    --text-color2: #000;
+    --text-color3: #948f8f;
+    --secondary-color: #1b1b1b;
+    --button-search: #5a2e98;
+
+>>>>>>> Stashed changes
 }
 
 html {
@@ -14,6 +25,7 @@ html {
 
 body {
     background-color: #000;
+<<<<<<< Updated upstream
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -32,14 +44,39 @@ a {
     background-color: #423f42;
     width: 80%;
     height: 100%;
+=======
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.main-container {
+    background-color: var(--secondary-color);
+    width: 80%;
+    padding: 8px;
+>>>>>>> Stashed changes
     margin: 0 auto;
 }
 
 .nav-container {
     display: grid;
+<<<<<<< Updated upstream
     font-size: 1.5rem;
     grid-template-columns: 0.4fr 3fr 1fr 0.4fr;
     grid-auto-flow: column;
+=======
+    grid-template-columns: 0.4fr 3fr 1.7fr;
+>>>>>>> Stashed changes
     align-items: center;
 }
 
@@ -50,11 +87,15 @@ a {
 .nav-container ul li {
     list-style: none;
     display: inline-block;
+<<<<<<< Updated upstream
     font-size: 0.9em;
+=======
+>>>>>>> Stashed changes
 }
 
 .nav-container img {
     border-radius: 50%;
+<<<<<<< Updated upstream
     height: 50px;
     margin-left: 10px;
 }
@@ -63,3 +104,54 @@ a {
     margin: 0 20px;
 }
 
+=======
+    width: 4rem;
+    height: auto;
+    margin-left: 10px;
+}
+
+.nav-container ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+.search-box {
+    border-radius: 66px 0 0 66px;
+    font-size: 1.2rem;
+    padding: 7px 20px;
+    background-color: rgb(85, 83, 83);
+    color: var(--main-color); 
+    font-weight: bolder;
+    border: 2px solid gray;
+}
+
+.search-box:focus {
+    outline: none;
+    border: 2px solid var(--main-color);
+}
+
+.search-box::placeholder {
+    font-size: 1.3rem;
+    color: var(--text-color3);
+}
+
+.search-button {
+    border-radius: 0 66px 66px 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 7px;
+    background-color: var(--main-color);
+    font-weight: bold;
+    border: 2px solid gray;
+}
+
+.search-button:hover {
+    background-color: var(--main-color2);
+    color: var(--text-color);
+}
+
+
+
+
+>>>>>>> Stashed changes
