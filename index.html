@@ -32,15 +32,13 @@
                         <a href="index.html"><i>Reanime</i></a>
                     </div> 
 
-                    <div class="search-results">
+                    <div class="right-icon">
                         <form action="/search-results.html" method="GET" class="search-anime" id="nav-search-anime">
                             <label for="search_anime" class="visually-hidden">Search Anime</label>
                              <div class="search-display" id="search-display">
                                 <i class="fas fa-search" style="color: #948f8f;"></i>
                              </div>
                             <i class="fa-solid fa-circle-user" style="color: #f7f7f7;"></i>
-                            <input type="search"  class="search-box visually-hidden" name="search_anime" id="search_anime" placeholder="Enter anime name">
-                            <button type="submit"  class="search-button visually-hidden">Search</button>
                         </form>
                     </div>
                 </div>
@@ -54,7 +52,7 @@
                                 <li><a href="movies.html">MOVIES</a></li>
                             </ul>
                         </div>
-                        <div class="search-results-mobile">
+                        <div class="search-event">
                             <div class="search-wrapper" id="search-wrapper">
                                 <form action="/search-results.html" method="GET" class="search-anime" id="nav-search-anime search-show">
                                     <label for="search_anime" class="visually-hidden">Search Anime</label>
@@ -69,30 +67,55 @@
                 </nav>
             </nav>
         </header>
+
+        <div class="log-in-wrapper">
+            <div class="log-in-container">
+                <div class="x-icon">
+                    <i class="fa-solid fa-x" style="color: #948f8f;"></i>
+                </div>
+                <h2>Member Login</h2>
+                <p>Reanime - a better place to watch anime online for free!</p>
+                <form action="/log-in.html" method="GET">
+                    <div class="log-in-grid">
+                        <label for="LoginEmail" class="visually-hidden">Your Email</label>
+                        <input type="text" name="LoginEmail" id="LoginEmail" placeholder="Your Email">
+                         <i class="fa-solid fa-user LoginIcon" style="color: #5a2e98;"></i>
+                    </div>
+                    <div class="log-in-grid">
+                        <label for="password" class="visually-hidden">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Password">
+                        <i class="fa-solid fa-lock LoginIcon" style="color: #5a2e98;"></i>
+                    </div>
+                    <div class="remember-flex">
+                        <label for="remember-me" class="remember">
+                            <input type="checkbox" name="remember-me" id="remember-me">
+                            <p>Remember me</p>  
+                        </label>  
+                        <div class="forgot">
+                            <a href="forgot.html">Forgot password?</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="login-button">
+                        <input type="submit" value="Login">
+                    </div>
+                    <div class="register">
+                        <p>Don't have an account?</p>
+                        <a href="register.html">Register</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
         
 
         <main>
-            <div class="carousel">
-                <nav>
-                    <div class="nav11-container">
-                        <div class="burger-menua" id="burger-menau">
-                            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-                        </div>
-    
-                        <div class="nav-linka" id="nav-linka">
-                            <ul>
-                                <li><a href="index.html">HOME</a></li>
-                                <li><a href="anime.html">ANIME LIST</a></li>
-                                <li><a href="popular.html">POPULAR</a></li>
-                                <li><a href="newSeason.html">NEW SEASON</a></li>
-                                <li><a href="movies.html">MOVIES</a></li>
-                            </ul>
-                        </div>
-    
-
-                    </div>
-                </nav>
-            </div>
+            <section aria-label="popular-anime-carousel">
+                <div class="carousel-wrapper">
+                    <p>Reserve for the carousel</p>
+                </div>
+                
+            </section>
 
         </main>
 

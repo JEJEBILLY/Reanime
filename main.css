@@ -8,6 +8,8 @@
     --main-color: #5a2e98;
     --background-main: #4a267e;
     --background-color: #000;
+    --background-Login: #ffffff;
+    --background-LoginInput: #e0d1f5;
     --text-color: #d9dddd;
     --text-color2: #000;
     --text-color3: #948f8f;
@@ -23,6 +25,12 @@ body {
     padding: 0;
     margin: 0;
 }
+
+input:focus {
+    outline: none;
+    border-color: var(--text-color);
+}
+
 
 a {
     text-decoration: none;
@@ -43,10 +51,12 @@ a {
 .nav-container {
     position: relative;
     display: flex;
-    padding: 20px;
+    flex-wrap: wrap;
+    padding: 20px 20px 10px 20px;
     font-size: 2rem;
     cursor: pointer;
     z-index: 3;
+    margin: 0 auto;
 }
 
 .nav-container div:last-child {
@@ -57,7 +67,6 @@ a {
 .link-wrapper {
     position: relative;
     margin: 0 10px;
-    top: -15px;
 }
 
 .nav-link {
@@ -126,13 +135,13 @@ a {
     font-weight: bold;
 }
 
-/* Right Icon */
+/* search Icon and Circle person */
 .search-display {
     font-size: 1.5rem;
     margin-right: 15px;
 }
 
-.search-results-mobile {
+.search-event {
     position: relative;
 }
 
@@ -147,9 +156,10 @@ a {
 }
 .search-anime {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
-.search-results-mobile input[type="search"] {
+.search-event input[type="search"] {
     border-radius: 66px;
     font-size: 1rem;
     padding: 15px 8px;
@@ -158,28 +168,26 @@ a {
     width: 100%;
 }
 
-.search-results-mobile input[type="search"]::-webkit-search-cancel-button {
+.search-event input[type="search"]::-webkit-search-cancel-button {
     appearance: none;
 }
 
-.search-results-mobile input::placeholder {
+.search-event input::placeholder {
     color:var(--text-color);
     opacity: 0.5;
 }
 
-.search-results-mobile input:focus {
-    outline: none;
-    border-color: var(--text-color);
+.search-event input:focus {
     color: var(--text-color);
 }
 
-.search-results-mobile button {
+.search-event button {
     background: none;
     border: none;
     position: absolute;
 }
 
-.search-results-mobile .fa-magnifying-glass {
+.search-event .fa-magnifying-glass {
     font-size: 1.2rem;
     position: absolute;
     transform: translateY(-50%);
@@ -190,5 +198,136 @@ a {
     right: 35px;
 }
 
+/*Main For Carousel*/
 
+.carousel-wrapper {
+    border: 2px solid white;
+    padding: 110px 20px;
+    margin: 0 10px;
+    color: aliceblue;
+}
+
+/*Log in Wrapper*/
+.x-icon {
+   display: flex;
+   justify-content: right;
+   margin: 15px 20px 0 0;
+   padding: 0;
+}
+
+.x-icon i {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.log-in-wrapper {
+    border: 2px solid red;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-in-wrapper a {
+    color: var(--main-color);
+}
+
+.log-in-container {
+    background-color: var(--background-Login);
+    border-radius: 10px;
+    height: 24rem;
+    width: 100%;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.log-in-container h2 {
+    padding: 0;
+    margin: 0 0 5px 0;
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+.log-in-container p {
+    margin: 10px;
+    font-size: 0.9rem;
+}
+
+.log-in-container form {
+    margin: 10px;
+}
+
+.log-in-container form .log-in-grid input {
+    margin: 10px;
+    font-size: 1rem;
+    background-color: var(--background-LoginInput);
+    padding: 10px;
+    border: none;
+    width: 100%;
+    color: var(--main-color);
+}
+
+.log-in-container form input::placeholder {
+    font-size: 1rem;
+    padding: 5px 0;
+}
+
+.LoginIcon {
+    margin: 10px;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: var(--background-LoginInput);
+}
+
+.log-in-grid {
+    display: grid;
+    grid-template-columns: 9.5fr 0.5fr;
+}
+
+.remember-flex {
+    margin: 8px 0;
+}
+
+.remember-flex  a {
+    float: right;
+    margin-right: 10px;
+    font-size: 1rem;
+    
+}
+
+.remember-flex label {
+    float: left;
+    margin-left: 10px;
+}
+
+.remember p {
+    display: inline-block;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.login-button {
+    margin: 25px 10px 15px 0;
+}
+
+.login-button input[type="submit"] {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.register {
+    letter-spacing: 1px;
+}
+.register p {
+    display: inline-block;
+    margin: 0;
+}
 
