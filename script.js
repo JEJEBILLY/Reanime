@@ -16,6 +16,8 @@ burgerIcon.addEventListener('click', function() {
     }
   });
 
+  /*For Search box to show*/ 
+
   const search_display = document.getElementById('search-display');
   const search_wrapper = document.getElementById('search-wrapper');
 
@@ -28,4 +30,18 @@ burgerIcon.addEventListener('click', function() {
     } else {
         search_wrapper.style.display = 'none';
     }
+});
+
+/* For Login Form to show*/
+
+const login_icon = document.getElementById('login-icon');
+const log_in_wrapper = document.getElementById('log-in-wrapper'); 
+const close_icon = document.getElementById('x-icon');
+
+login_icon.addEventListener('click', () => {
+  log_in_wrapper.classList.toggle('active');
+});
+
+close_icon.addEventListener('click', () => {
+  log_in_wrapper.classList.remove('active');
 });

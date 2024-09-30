@@ -8,6 +8,8 @@
     --main-color: #5a2e98;
     --background-main: #4a267e;
     --background-color: #000;
+    --background-secondaryColor: #0E0E0E;
+    --background-colorGold: #C39D00;
     --background-Login: #ffffff;
     --background-LoginInput: #e0d1f5;
     --text-color: #d9dddd;
@@ -24,6 +26,10 @@ body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
+}
+
+.main-container {
+    background-color: var(--background-secondaryColor);
 }
 
 input:focus {
@@ -198,21 +204,13 @@ a {
     right: 35px;
 }
 
-/*Main For Carousel*/
-
-.carousel-wrapper {
-    border: 2px solid white;
-    padding: 110px 20px;
-    margin: 0 10px;
-    color: aliceblue;
-}
-
 /*Log in Wrapper*/
 .x-icon {
    display: flex;
    justify-content: right;
    margin: 15px 20px 0 0;
    padding: 0;
+   cursor: pointer;
 }
 
 .x-icon i {
@@ -220,15 +218,30 @@ a {
     font-weight: bolder;
 }
 
+.log-in-wrapper a {
+    cursor: pointer;
+}
+
 .log-in-wrapper {
-    border: 2px solid red;
     position: absolute;
     top: 0;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 10;
+    position: fixed;
+}
+
+.log-in-wrapper.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 .log-in-wrapper a {
@@ -242,6 +255,7 @@ a {
     width: 100%;
     margin: 0 10px;
     text-align: center;
+    z-index: 15;
 }
 
 .log-in-container h2 {
@@ -331,3 +345,155 @@ a {
     margin: 0;
 }
 
+/*Main For Carousel*/
+
+.carousel-wrapper {
+    border: 2px solid white;
+    padding: 110px 20px;
+    margin: 0 10px;
+    color: aliceblue;
+}
+
+/*Link for Social Accounts*/
+
+.social-accounts-link {
+    margin: 15px 10px;
+    padding: 10px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    border: 1px solid #0e0e0e;
+}
+
+.social-accounts-link a {
+    color: #ffffff;
+}
+
+.social-icon {
+    display: inline-block;
+    padding: 1vh 5vw;
+    border-radius: 5px;
+}
+
+.social-accounts-link p {
+   opacity: 0.2;
+}
+
+.social-accounts-link p:last-child {
+    font-size: 0.8rem;
+    text-align: center;
+}
+.telegram {
+    background-color: #0088cc;
+}
+.twitter {
+    background-color: #000;
+}
+
+.facebook {
+    background-color: #4267b2;
+}
+
+.reddit {
+    background-color: #CF3A03;
+}
+
+.share {
+    background-color: #7AA931;
+}
+
+/*Advertisement Styling*/
+.advertisement-wrapper {
+    margin: 0 10px;
+    height: 6vh;
+    width: calc(100vw - 27px);
+}
+
+.advertisement-container {
+    height: 100%;
+    width: 100%;
+    background: url('images/background/anilab.gif');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*New anime Release*/
+
+.new-anime-updated {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-anime-updated h2 {
+    color: var(--text-color);
+    margin: 25px 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.recently-updated-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.recently-updated {
+    width: 50%;
+    padding: 0 10px; 
+    text-align: center;
+}
+
+.recently-updated > a {
+    margin: 5px 0 15px 0; 
+    display: block;
+}
+
+.recently-updated a:not(:first-child){
+    font-size: 0.9rem;
+    color: var(--text-color3);
+}   
+
+.image-container-updated {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.image-container-updated img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.img-top-left {
+    position: absolute;
+    top: 0;
+    padding: 0.4rem;
+    background-color: white;
+    border-radius: 10px 0 10px 0;
+    color: var(--text-color2);
+}
+
+.img-bottom-left {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    background-color: var(--main-color);
+    padding: 0.4rem;
+    border-radius: 0 10px 0 10px;
+}
+
+.img-bottom-right {
+    position: absolute;
+    bottom: 3px;
+    right: 0;
+    padding: 0.4rem;
+    background-color: var(--background-colorGold);
+    border-radius: 10px 0 10px 0;
+}
