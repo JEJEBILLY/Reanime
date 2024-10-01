@@ -9,6 +9,7 @@
     --background-main: #4a267e;
     --background-color: #000;
     --background-secondaryColor: #0E0E0E;
+    --background-thirdChoice: #1c1c1c;
     --background-colorGold: #C39D00;
     --background-Login: #ffffff;
     --background-LoginInput: #e0d1f5;
@@ -22,7 +23,7 @@ html {
 }
 
 body {
-    background-color: #000;
+    background-color: var(--background-secondaryColor);
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
@@ -348,10 +349,13 @@ a {
 /*Main For Carousel*/
 
 .carousel-wrapper {
-    border: 2px solid white;
     padding: 110px 20px;
     margin: 0 10px;
     color: aliceblue;
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-thirdChoice);
+    border-radius: 10px;
 }
 
 /*Link for Social Accounts*/
@@ -420,6 +424,9 @@ a {
     background-repeat: no-repeat;
 }
 
+.advertisement-wrapper a {
+    padding: 100%;
+}
 
 /*New anime Release*/
 
@@ -496,4 +503,18 @@ a {
     padding: 0.4rem;
     background-color: var(--background-colorGold);
     border-radius: 10px 0 10px 0;
+}
+/* Pagbinalikan make sure to delete height i base mo lang yung height nentong estimated-shedule sa laman nya*/
+.estimated-schedule-container {
+    background-color: var(--background-thirdChoice);
+    margin: 2em 10px 3em 10px;
+    height: 19em;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+}
+
+.estimated-schedule-container p {
+    margin: auto auto;
 }
