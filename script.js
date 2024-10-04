@@ -45,3 +45,5 @@ login_icon.addEventListener('click', () => {
 close_icon.addEventListener('click', () => {
   log_in_wrapper.classList.remove('active');
 });
+
+
