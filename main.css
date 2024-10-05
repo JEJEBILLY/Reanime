@@ -680,3 +680,137 @@ ul li {
     font-size: 0.9rem;
 }
 
+/*Footer*/
+
+footer {
+    background-color: var(--background-thirdChoice);
+    padding: 2px;
+    margin-top: 65px;
+}
+
+.toggle-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 1.7em;
+    height: 0.8em;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #444;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 0.6em;
+    width: 0.6em;
+    left: 2px;
+    bottom: 2px;
+    background-color: #ffffff;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+
+input:checked + .slider {
+    background-color: var(--background-main);
+}
+
+.toggle-label {
+    margin-left: 5px;
+    font-size: 0.6rem;
+    color: var(--text-color3);
+}
+
+.logo-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.logo-info-container img{
+    height: 2.9em;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+}
+
+.logo-info-container i {
+    font-size: 1.9rem;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.copyright-reanime {
+    text-align: center;
+    color: var(--text-color3);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.info-link-social {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.info-link-social a {
+    color: var(--text-color2);
+    padding: 5px;
+    background-color: var(--text-color3);
+    font-size: 1.2rem;
+    margin-left: 10px;
+    border-radius: 3px;
+    opacity: 0.4;
+}
+
+.disclaimer {
+    text-align: center;
+    color: var(--text-color3);
+    opacity: 0.5;
+    font-size: 0.8rem;
+    padding: 0 20px;
+}
+
+.help-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+}
+
+.help-links-warapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.help-links-warapper > span {
+    margin-bottom: 10px;
+    color: var(--text-color);
+    font-weight: bolder;
+}
+
+.help-links-warapper > a {
+    color: var(--text-color3-with-opacity);
+}
